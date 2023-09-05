@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P4Comments", "P4Comments\P4Comments.csproj", "{1DD64A88-AC4A-41E0-A6C7-10B168778BAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DD64A88-AC4A-41E0-A6C7-10B168778BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DD64A88-AC4A-41E0-A6C7-10B168778BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DD64A88-AC4A-41E0-A6C7-10B168778BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DD64A88-AC4A-41E0-A6C7-10B168778BAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

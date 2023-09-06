@@ -5,10 +5,14 @@ using static System.Console;
 
 WriteLine("Seconds to minutes converter.");
 
-WriteLine("Enter the seconds: ");
-var seconds =float.Parse(ReadLine()!);
+Write("Enter the seconds: ");
+var seconds =int.Parse(ReadLine()!);
 
 var minutes = seconds /60;
+int mod = seconds % 60;
 
-WriteLine(minutes +" minutes");
+Write(minutes + " min ");
+WriteLine(mod + " sec");
+
+    
 

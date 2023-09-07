@@ -7,4 +7,3 @@ int[] results = { 1, 0 };
 
 int x = results[input];
 WriteLine(+ x);
-

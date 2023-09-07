@@ -1,3 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using static System.Console;
 
-Console.WriteLine("Hello, World!");
+WriteLine("Enter a number: ");
+int num1=int.Parse(ReadLine()!);
+
+WriteLine("Enter another number: ");
+int num2 = int.Parse(ReadLine()!);
+
+

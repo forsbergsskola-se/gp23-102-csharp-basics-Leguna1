@@ -1,4 +1,6 @@
-﻿class Program
+﻿namespace P12_2Random_Password;
+
+class Program
 {
     static void Main()
     {

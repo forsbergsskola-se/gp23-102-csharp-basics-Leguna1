@@ -1,16 +1,26 @@
-﻿//Develop a program that asks the user to enter a single character and
-//then determines whether it's a digit, a vowel or a consonant. Display an appropriate message.
-//  =vowels
-// b, c, d, f, g, h, j, k, l, m, n, p, q, r, s, t, v, w, x, y, z isConsonant
+﻿static class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Enter a single character: ");
+        char inputChar = Console.ReadKey().KeyChar;
 
-Console.WriteLine("Enter a letter or a number: ");
-char input = char.Parse(Console.ReadLine()!);
-
-char a, e, i, o, u, A, E, I, O, U;
-
-
-
-
-
-
-
+        if (char.IsDigit(inputChar))
+        {
+            Console.WriteLine("\nThat's a digit.");
+        }
+        else if ((inputChar >= 'a' && inputChar <= 'z') || (inputChar >= 'A' && inputChar <= 'Z'))
+        {
+            char lowercaseChar = char.ToLower(inputChar);
+            if (lowercaseChar == 'a' || lowercaseChar == 'e' || lowercaseChar == 'i' || lowercaseChar == 'o' || lowercaseChar == 'u')
+            {
+                Console.WriteLine("\nYou entered a vowel.");
+            }
+            else
+            {
+                Console.WriteLine("\nThat's a consonant.");
+            }
+        }
+       
+    }
+}

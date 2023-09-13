@@ -30,7 +30,7 @@ Console.WriteLine(double4);
 Console.WriteLine(double5);
 Console.WriteLine(double6);
 
-Console.WriteLine("Give me a crit chance between 0.0 (0%) and 1.0 (100%)");
+Console.WriteLine("Give me a crit chance between 0,0 (0%) and 1,0 (100%)");
 
 double critChance = double.Parse(Console.ReadLine()!);
 
@@ -39,5 +39,3 @@ Console.WriteLine(random.NextDouble() <= critChance ? "Crit" : "No Crit");
 Console.WriteLine(random.NextDouble() <= critChance ? "Crit" : "No Crit");
 Console.WriteLine(random.NextDouble() <= critChance ? "Crit" : "No Crit");
 Console.WriteLine(random.NextDouble() <= critChance ? "Crit" : "No Crit");
-Console.WriteLine(random.NextDouble() <= critChance ? "Crit" : "No Crit");
-

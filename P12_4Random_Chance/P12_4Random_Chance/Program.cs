@@ -7,7 +7,7 @@ double chance = 0.1;
 
 if (tryAgain <= chance)
 {
-    Console.WriteLine("You got the magic number [1]");
+    Console.WriteLine("You got the magic number [1] ;)");
 }
 else
 {

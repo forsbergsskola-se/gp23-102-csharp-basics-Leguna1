@@ -23,18 +23,17 @@
 
             matches -= playerDraw;
 
-            if (matches == 0 || matches <playerDraw)
+            if (matches == 1 || matches <=playerDraw)
             {
                 Console.WriteLine($"You draw {playerDraw} matches.");
-                Console.WriteLine("Congratulations! You win!");
-                break;
+                Console.WriteLine("You lose. GAME OVER!");
             }
 
             Console.WriteLine(new string('|', matches) + $" ({matches})");
 
             // AI's turn
             int aiDraw = new Random().Next(1, 4);
-            if (aiDraw < matches)
+            if (aiDraw < matches || matches > 0)
             {
                 matches -= aiDraw; 
                 
@@ -42,6 +41,10 @@
                 Console.WriteLine(new string('|', matches) + $" ({matches})");
                 goto PlayerDraws;
                 
+            }
+            if ( matches ==2 && aiDraw >= matches || matches ==3 && aiDraw >=matches)
+            {
+                Console.WriteLine("You WIN!");
             }
         }
     }

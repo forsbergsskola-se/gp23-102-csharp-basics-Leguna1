@@ -23,7 +23,7 @@
 
             matches -= playerDraw;
 
-            if (matches == 1 || matches <=playerDraw)
+            if (matches ==0 || matches <0)
             {
                 Console.WriteLine($"You draw {playerDraw} matches.");
                 Console.WriteLine("You lose. GAME OVER!");
@@ -42,7 +42,7 @@
                 goto PlayerDraws;
                 
             }
-            if ( matches ==2 && aiDraw >= matches || matches ==3 && aiDraw >=matches)
+            if ( matches==0 || matches <0)
             {
                 Console.WriteLine("You WIN!");
             }

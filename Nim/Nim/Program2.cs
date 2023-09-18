@@ -13,12 +13,13 @@
             PlayerStarts:
             Console.WriteLine("How many matches do you want to draw?");
             PlayerDraws:
-            int playerDraw = int.Parse(Console.ReadLine()!);
+            if(!int.TryParse(Console.ReadLine(), out int playerDraw)){
 
-            if (playerDraw < 1 || playerDraw > 3 || playerDraw > matches)
-            {
-                Console.WriteLine("You can only draw 1-3 matches, try again.");
-                goto PlayerStarts;
+                if (playerDraw < 1 || playerDraw > 3 || playerDraw > matches)
+                {
+                    Console.WriteLine("You can only draw 1-3 matches, try again.");
+                    goto PlayerStarts;
+                }
             }
 
             matches -= playerDraw;
@@ -42,7 +43,7 @@
                 goto PlayerDraws;
                 
             }
-            if ( matches==0 || matches <0)
+            if ( matches==0 )
             {
                 Console.WriteLine("You WIN!");
             }
